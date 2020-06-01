@@ -1,0 +1,95 @@
+body{
+    background-color: rgb(66, 65, 65);
+    font-family: 'Bebas Neue';
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline;
+ }
+
+nav li {
+    float:left;
+ }
+
+nav li a {
+   display: inline-block;
+   color: teal;
+   text-align: center;
+   padding: 16px;
+   text-decoration: none;
+ }
+
+nav li a:hover {
+   background-color:orange;
+   text-transform: uppercase;
+   text-align:center;
+}
+
+.nav{
+    font-size: 25px;
+    line-height: 60px;
+    justify-content: center;
+}
+
+.title{
+    color: orange;
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    text-shadow: 1px 1px 1px black,
+                 0px 0px 5px #3f817ef5,
+                 0px 0px 25px #68f8f1f5;
+
+    padding:20px;
+}
+
+
+.container{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(66, 65, 65);
+  font-family: 'Bebas Neue';
+  margin-top: 50px;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 70%;
+  margin: auto;
+}
+
+.carousel-caption{
+    font-size: 50px;
+    color: orange;
+    text-shadow: 2px 2px 5px black;
+}
+
+.homepagepara{
+text-align: center;
+font-size: 30px;
+background-color: orange;
+padding: 10px;
+margin: auto;
+width: 60%;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+footer{
+    background-color: orange;
+    color: rgb(66, 65, 65);
+    font-family: 'Bebas Neue';
+    font-size: 24px;
+    text-align: center;
+    padding: 30px;
+ }
+  
+ .socialmedia {
+    padding: 5px;
+    display: inline;
+ }
+ 
