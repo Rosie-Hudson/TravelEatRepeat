@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+    <head>
+        <title>Map</title>
+        <link rel="stylesheet" href="./main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+      </head>
+    
+      <body>
+      <header>
+  
+        <!-- this is the nav bar -->
+        <nav>
+            <ul>
+                <li><a class="title" href="./index.html">Travel Eat Repeat &copy;</a></li>
+                <li><a class="nav" href="./about.html">Our Founders</a></li>
+                <li><a class="nav"href="./Map.html">Get involved</a></li>
+                <li><a class="nav" href="./Asia.html">Asia</a></li>
+                <li><a class="nav" href="./TheAmericas.html">The Americas</a></li>
+                <li><a class="nav" href="./Europe.html">Europe</a></li>
+            </ul>
+        </nav>
+        <br>
+      </header>
+
+        <main>
+            <h1 class=formsubheading>Add your meal to the map</h1>
+            <p class=formintro>Help us colour in our map! Click on your country to fill out our form.</p>
+            <a href="Form.html">
+                <style>
+                    /* From Mary with help from google geocharts */
+                    .chart path:hover {fill:orange;}
+                </style>
+
+                <div class="chart" id="regions_div"> </div>
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                <script type="text/javascript">
+                google.charts.load('current', {'packages':['geochart', 'corechart']});
+                google.charts.setOnLoadCallback(drawRegionsMap);
+                function drawRegionsMap() {
+                    var data = google.visualization.arrayToDataTable([
+                          ['Country'],
+                          ['Italy'],
+                          ['Romania'],
+                          ['Thailand'],
+                          ['Brazil'],
+                          ['Colombia'],
+                          ['Canada'],
+                          ['China'],
+                ]);
+                var options = {
+                    legend: 'none',
+                    defaultColor: 'teal',
+                    backgroundColor: 'rgb(66, 65, 65)' 
+                    };
+                    var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+                        chart.draw(data, options);
+                }
+                </script>  
+            </a>
+        </main>
+        
+        <div id= footer>
+            <footer>
+             
+               <p>Travel Eat Repeat | Foodies Community &copy; 2020</p>
+             
+               <div class= socialmedia>
+               <a href="https://facebook.com" target="_blank">
+                   <img src="facebooklogo.png" alt="Facebook" width="36" height="36"></a>
+               </div>
+             
+               <div class=socialmedia>
+               <a href="https://twitter.com" target="_blank">
+                   <img src="twitterlogo.png" alt="Twitter" width="36" height="36"></a>
+               </div>
+             
+               <div class=socialmedia>
+               <a href="https://instagram.com" target="_blank">
+                   <img src="instagramlogo.png" alt="Instagram" width="36" height="36"></a>
+               </div>
+             
+            </footer>
+            </div>
+        
+        </body>
+        </html>

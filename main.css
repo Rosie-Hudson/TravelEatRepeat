@@ -1,40 +1,48 @@
-body{
-    background-color: rgb(66, 65, 65);
-    font-family: 'Bebas Neue';
-}
-
+/* Nav bar help from: https://www.w3schools.com/howto/howto_js_topnav.asp */ 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: inline;
- }
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color:rgb(66, 65, 65);
+   color: orange;
+   font-family: 'Bebas Neue';
+   font-size: 40px;
+   padding:0px;
+   width: auto;
+} 
 
 nav li {
-    float:left;
- }
+  float: left;
+}
 
 nav li a {
-   display: inline-block;
-   color: teal;
-   text-align: center;
-   padding: 16px;
-   text-decoration: none;
- }
+  display: block;
+  color: teal;
+  box-align: left;
+  padding: 16px;
+  text-decoration: none;
+}
 
 nav li a:hover {
-   background-color:orange;
-   text-transform: uppercase;
-   text-align:center;
+  background-color:orange;
+  text-transform: uppercase;
 }
 
 .nav{
-    font-size: 25px;
-    line-height: 60px;
-    justify-content: center;
+   font-size: 25px;
+   line-height: 40px;
+   justify-content: center;
 }
 
+
+body{
+    background-color:  rgb(66, 65, 65);
+    margin:25px 10px 0px;
+    text-align: center;
+}
+
+/* HOMEPAGE CSS*/
 .title{
     color: orange;
     font-family: 'Bebas Neue';
@@ -42,54 +50,266 @@ nav li a:hover {
     text-shadow: 1px 1px 1px black,
                  0px 0px 5px #3f817ef5,
                  0px 0px 25px #68f8f1f5;
-
-    padding:20px;
-}
-
-
-.container{
+  
+    padding:10px;
+ }
+  
+  
+ .container{
   display: block;
   justify-content: center;
   align-items: center;
   background-color: rgb(66, 65, 65);
   font-family: 'Bebas Neue';
   margin-top: 50px;
-}
-
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
+ }
+  
+ .carousel-inner > .item > img,
+ .carousel-inner > .item > a > img {
   width: 70%;
   margin: auto;
-}
-
-.carousel-caption{
+ }
+  
+ .carousel-caption{
     font-size: 50px;
     color: orange;
     text-shadow: 2px 2px 5px black;
-}
-
-.homepagepara{
-text-align: center;
-font-size: 30px;
-background-color: orange;
-padding: 10px;
-margin: auto;
-width: 60%;
-margin-top: 50px;
-margin-bottom: 50px;
-}
-
-footer{
-    background-color: orange;
-    color: rgb(66, 65, 65);
-    font-family: 'Bebas Neue';
-    font-size: 24px;
-    text-align: center;
-    padding: 30px;
  }
   
- .socialmedia {
-    padding: 5px;
-    display: inline;
+ .homepagepara{
+ text-align: center;
+ font-size: 30px;
+ color: white;
+ padding: 10px;
+ margin: auto;
+ width: 90%;
+ margin-top: 50px;
+ margin-bottom: 50px;
  }
  
+  
+/* FORM PAGE CSS
+- Form help from: https://stackoverflow.com/questions/8097744/how-do-i-center-this-form-in-css 
+   and https://www.w3schools.com/css/css_form.asp */
+form {
+    display: inline-block;
+}
+
+.formsubheading{
+    font-family: 'Bebas Neue';
+    color:orange;
+    font-size: 38px;
+    text-align: center;
+}
+
+.formintro{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 18px;
+    width:100%;
+    text-align: center;
+}
+
+.formtitles{
+    font-family: 'Bebas Neue';
+    color:orange;
+    font-size: 34px;
+    vertical-align: top;
+    text-align: center;
+}  
+
+.formtext{
+    font-family: 'Open Sans', sans-serif;
+    color:teal;
+    font-weight: bold;
+    font-size: 18px;
+    width:70%;
+    text-align: center;
+}
+
+#input{
+    width:50%;
+    box-align: center;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: orange;
+    font-weight: bolder;
+    color: teal;
+    padding: 16px 32px;
+    width: 200px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: teal;
+    color:orange;
+    font-weight: bolder;
+}
+
+/* ABOUT US CSS*/ 
+#aboutusintro{
+    text-align: center;
+ }
+  
+  .aboutusimage {
+    /* width and media queries taken from w3 schools example:
+    https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_media_query */
+  
+    border: 3px solid white;
+    margin: 15px 15px 15px 0px;
+    float: left;
+    clear: left;
+    vertical-align: middle;
+    width:20%;
+ }
+  .aboutusbio {
+    /* width and media queries taken from w3 schools example:
+    https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_media_query */
+  
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 18px;
+    vertical-align: middle;
+    width:100%;
+ }
+  
+ /* width and media queries taken from w3 schools example:
+    https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_media_query */
+     @media screen and (max-width:480px) {
+    .aboutusimage, .aboutusbio {
+      width:95%;
+    }
+  
+ }
+  
+ .subheading{
+    font-family: 'Bebas Neue';
+    color: orange;
+    font-size: 38px;
+ }
+  .aboutusname{
+    font-family: 'Bebas Neue';
+    color: teal;
+    font-size: 34px;
+    vertical-align: top;
+  
+ }
+  
+  .biobox{
+    margin-bottom: 30px;
+    overflow: auto;
+    vertical-align: middle;
+ }
+ 
+ /* Blog page CSS */
+  
+ .continentname{
+    color: orange;
+    font-size: 46pt;
+    font-family: 'Bebas Neue';
+    text-align: center;
+     }
+     
+     .blogcountry {
+     color: orange;
+     font-size: 42pt;
+     font-family: 'Bebas Neue';
+     text-align: center;
+     }
+       
+     .blogsubheading {
+     color:teal;
+     font-family: 'Bebas Neue';
+     font-size: 28pt;
+     text-align: center;
+     }
+      
+     .blogmap {
+        border: 3px solid white;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        height: 300px;
+     }
+      
+     .blogtext {
+     font-family: 'Open Sans', sans-serif;
+     color: white;
+     font-size: 18px;
+     margin-left: 35px;
+     }
+      
+     .bloginformation {
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        font-size: 18px;
+        margin-bottom: 30px;
+        overflow: auto;
+        vertical-align: middle;
+     }
+      
+      
+     .blogpic {
+        border: 2px solid orange;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+     }
+      
+     #bloggallery {
+        text-align: center;
+        padding: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+     }
+      
+      
+     .blogfoodimage {
+        border: 3px solid white;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+     }
+     .imagebox {
+        border: 3px solid white;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        width: 300px;
+    }
+    .imagebox img {
+        max-width: 100%;
+        transition: all 0.3s;
+        display: block;
+        width: 100%;
+        height: auto;
+        transform: scale(1);
+    }
+    
+    .imagebox:hover img {
+        transform: scale(1.1);
+    }
+      
+     .recipeinformation{
+            margin-bottom: 30px;
+            margin-top: 10px;
+     }
+    
+
+#footer {
+  background-color: orange;
+  color: rgb(66, 65, 65);
+  font-family: 'Bebas Neue';
+  font-size: 24px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.socialmedia {
+  padding: 5px;
+  display: inline;
+}
