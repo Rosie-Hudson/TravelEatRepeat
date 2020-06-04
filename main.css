@@ -39,7 +39,6 @@ nav li a:hover {
 body{
     background-color:  rgb(66, 65, 65);
     margin:25px 10px 0px;
-    text-align: center;
 }
 
 /* HOMEPAGE CSS*/
@@ -50,11 +49,10 @@ body{
     text-shadow: 1px 1px 1px black,
                  0px 0px 5px #3f817ef5,
                  0px 0px 25px #68f8f1f5;
-  
     padding:10px;
  }
   
-  
+  /* carousel help from https://www.w3schools.com/bootstrap/bootstrap_carousel.asp*/
  .container{
   display: block;
   justify-content: center;
