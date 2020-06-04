@@ -93,6 +93,10 @@ form {
     display: inline-block;
 }
 
+.formbox {
+   text-align: center;
+}
+
 .formsubheading{
     font-family: 'Bebas Neue';
     color:orange;
